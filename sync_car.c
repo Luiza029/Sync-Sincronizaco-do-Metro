@@ -1,17 +1,6 @@
-#include <pthread.h>
+#include "sync_car.h"
 #include <stdio.h>
 #include <stdlib.h>
-
-struct station{
-    pthread_mutex_t mutex;
-    pthread_cond_t carro_chegou;
-    pthread_cond_t carro_pode_sair;
-
-    int passageiros_esperando;
-    int assentos_livre;
-    int passageiros_sem_board;
-
-};
 
 void station_init(struct station *station){
     pthread_mutex_init(&station->mutex, NULL);
