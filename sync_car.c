@@ -13,7 +13,6 @@ void station_init(struct station *station){
 }
 
 void station_load_car(struct station *station, int count){
-
 }
 
 void station_wait_for_car(struct station *station){
@@ -32,5 +31,13 @@ void station_wait_for_car(struct station *station){
 }
 
 void station_on_board(struct station *station){
+    pthread_mutex_lock(&station->mutex);
 
+    station->passageiros_sem_board--;
+
+    if(station->passageiros_sem_board == 0 && (station->assentos_livre == 0 || station->passageiros_esperando == 0)){
+        pthread_cond_signal(&station->carro_pode_sair);
+    }
+
+    pthread_mutex_unlock(&station->mutex);
 }
