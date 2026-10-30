@@ -37,3 +37,24 @@ Looks good!
 [?2004lexit
 
 Script done on 2026-10-30 08:59:45-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-10-30 09:49:03-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="177" LINES="30"]
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw/lcw[00m$ wo[Khoami
+[?2004lcwlui
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw/lcw[00m$ pwd
+[?2004l/mnt/c/Users/cwlui/facul/lcw/lcw
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw/lcw[00m$ date
+[?2004lFri Oct 30 09:49:08 -03 2026
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw/lcw[00m$ date[1Ppwdwhoamigit pushhscommit -m "finaliza arquivo .c"add .[K[4Pcleargit pushcommit -m "implementa station_load_car, cria o makefile e roda os testes"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[Kmake clearnscript -a evidencias.log[16Pgit pushcommit -m "implementa station_on_board"add .[Kcommit -m "implementa station_on_board"push[Kscript -a evidencias.log[14Pmake cleanr[1Pgit add .commit -m "implementa station_load_car, cria o makefile e roda os testes"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush[K[3Pcleargit add .commit -m "finaliza arquivo .c"puhs[Ksh[2Pwhoami[3Ppwddate[Kdate[1Ppwdwhoamigit pushhscommit -m "finaliza arquivo .c"add .[K[4Pcleargit pushcommit -m "implementa station_load_car, cria o makefile e roda os testes"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[Kmake clearnscript -a evidencias.log[16Pgit pushcommit -m "implementa station_on_board"add .[K[5Pexitfor i in $(seq 1 100); do ./sync_car > /dev/null || { echo "FALHOU na execucao $i"; break; }; done; echo "fim"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake run[K[K run[K runfor i in $(seq 1 100); do ./sync_car > /dev/null || { echo "FALHOU na execucao $i"; break; }; done; echo "fim"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kgit add .commit -m "implementa station_on_board"push[Kscript -a evidencias.log[14Pmake cleanr[1Pgit add .commit -m "implementa station_load_car, cria o makefile e roda os testes"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush[K[3Pcleargit add .commit -m "finaliza arquivo .c"puhs[Ksh[2Pwhoami[3Ppwddate[K[7mchmod +x testar.sh[27mchmod +x testar.sh
+[?2004l[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw/lcw[00m$ [7m./testar.sh[27m./testar.sh
+[?2004l
+=== 1. make clean + make (sem warnings)
+    OK
+
+=== 2. teste do professor, 300 vezes
+    OK
+
+=== 3. teste do professor em 1 núcleo só, 100 vezes (outra ordem de threads)
+    OK
+
+=== 4. compilando teste_extra
+ 
