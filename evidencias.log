@@ -1,0 +1,39 @@
+Script started on 2026-10-30 08:52:18-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="177" LINES="18"]
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw/lcw[00m$ date
+[?2004lFri Oct 30 08:52:48 -03 2026
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw/lcw[00m$ whoami
+[?2004lcwlui
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw/lcw[00m$ pwd
+[?2004l/mnt/c/Users/cwlui/facul/lcw/lcw
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw/lcw[00m$ make
+[?2004lcc    -c -o sync_car.o sync_car.c
+make: *** No rule to make target 'sync_car.test.o', needed by 'sync_car'.  Stop.
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw/lcw[00m$ make run
+[?2004lmake: *** No rule to make target 'sync_car.test.o', needed by 'sync_car'.  Stop.
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw/lcw[00m$ make
+[?2004lgcc -c sync_car_test.c
+gcc sync_car.o sync_car_test.o -o sync_car
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw/lcw[00m$ make run
+[?2004l./sync_car
+Error: Failed to complete after 1 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [station_load_car() did not return immediately when no waiting passengers]
+make: *** [makefile:11: run] Error 1
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw/lcw[00m$ make
+[?2004lcc    -c -o sync_car.o sync_car.c
+gcc sync_car.o sync_car_test.o -o sync_car
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw/lcw[00m$ make run
+[?2004l./sync_car
+car entering station with 25 free seats
+car departed station with 25 new passenger(s) (expected 25)
+car entering station with 32 free seats
+car departed station with 32 new passenger(s) (expected 32)
+car entering station with 7 free seats
+car departed station with 7 new passenger(s) (expected 7)
+car entering station with 38 free seats
+car departed station with 36 new passenger(s) (expected 36)
+Looks good!
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw/lcw[00m$ [7mfor i in $(seq 1 100); do ./sync_car > /dev/null || { echo "FALHOU na execucao $i"; break; }; done; echo "fim"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in $(seq 1 100); do ./sync_car > /dev/null || { echo "FALHOU na execucao $i"; break; }; done; echo "fim"
+[?2004lfim
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw/lcw[00m$ exit
+[?2004lexit
+
+Script done on 2026-10-30 08:59:45-03:00 [COMMAND_EXIT_CODE="0"]
