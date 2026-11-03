@@ -57,4 +57,56 @@ Script started on 2026-10-30 09:49:03-03:00 [TERM="xterm-256color" TTY="/dev/pts
     OK
 
 === 4. compilando teste_extra
- 
+ Script started on 2026-11-03 11:55:21-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="177" LINES="14"]
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw[00m$ date
+[?2004lTue Nov  3 11:55:22 -03 2026
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw[00m$ pd[Kwd
+[?2004l/mnt/c/Users/cwlui/facul/lcw
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw[00m$ whoami
+[?2004lcwlui
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw[00m$ whoami[3Ppwddategcc -Wall -Wextra -pthread sync_car.c teste_extra.c -o teste_extra && ./teste_extra[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwc -l teste_extra.c[K[17@grep -n "struct ctx {"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./testar.sh[7@chmod +x [C[C[C[C[C[C[C[C[C[10Pgit pu[C[C[10@chmod +x testar.[C[C
+[?2004l[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw[00m$ chmod +x testar.sh[12Pwhoami[3Ppwddategcc -Wall -Wextra -pthread sync_car.c teste_extra.c -o teste_extra && ./teste_extra[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwc -l teste_extra.c[K[17@grep -n "struct ctx {"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./testar.sh
+[?2004l
+=== 1. make clean + make (sem warnings)
+    OK
+
+=== 2. teste do professor, 300 vezes
+    OK
+
+=== 3. teste do professor em 1 núcleo só, 100 vezes (outra ordem de threads)
+    OK
+
+=== 4. compilando teste_extra
+    OK
+
+=== 5. teste_extra (detalhado)
+[OK]     vagão sem passageiros parte na hora
+[OK]     passageiro sem vagão fica esperando
+[OK]     vagão com 0 assentos e fila parte na hora
+[OK]     portas fecham quando o vagão parte
+[OK]     embarque simultâneo (requisito 5)
+[OK]     mais passageiros que assentos
+[OK]     menos passageiros que assentos
+[OK]     passageiro chega durante o embarque
+[OK]     acordar espúrio (while, não if)
+[OK]     sem busy-wait
+[OK]     estações independentes
+         (155 vagões, 500 passageiros)
+[OK]     estresse
+
+12 de 12 testes passaram
+
+=== 6. teste_extra mais 15 vezes (5 delas em 1 núcleo)
+    OK
+
+=== 7. ThreadSanitizer (procura acesso a contador sem o mutex)
+    OK
+
+=== 8. make clean remove os arquivos compilados
+    OK
+
+TUDO PASSOU
+[?2004h]0;cwlui@Luiza: /mnt/c/Users/cwlui/facul/lcw[01;32mcwlui@Luiza[00m:[01;34m/mnt/c/Users/cwlui/facul/lcw[00m$ exit
+[?2004lexit
+
+Script done on 2026-11-03 11:58:38-03:00 [COMMAND_EXIT_CODE="0"]
