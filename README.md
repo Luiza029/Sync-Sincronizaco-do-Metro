@@ -34,6 +34,15 @@ ou
 make run
 ```
 
+## Testes extras
+
+```bash
+chmod +x testar.sh
+./testar.sh
+```
+
+Ao final deve aparecer `TUDO PASSOU`.
+
 ## Sistema operacional
 
 Desenvolvido e testado em **Ubuntu 26.04 LTS** rodando no **WSL2** (Windows 11),
