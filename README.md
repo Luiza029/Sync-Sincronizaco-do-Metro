@@ -5,6 +5,8 @@
 `sync_car.h`: Declaração da struct station (mutex, variáveis de condição e contadores) e dos protótipos das funções. 
 `sync_car_test.c`: Programa de teste fornecido pelo professor. 
 Makefile: Compila o projeto e gera o executável sync_car. 
+`teste_extra.c`: Testes extras de casos de borda (vagão sem passageiros, 0 assentos, embarque simultâneo, acordar espúrio, busy-wait, estresse). Gerado com auxílio de IA (Claude) e usado para validar a implementação.
+`testar.sh`: Script que compila e roda todos os testes (teste do professor várias vezes, teste_extra e ThreadSanitizer). Gerado com auxílio de IA (Claude).
 
 ## Como compilar
 
