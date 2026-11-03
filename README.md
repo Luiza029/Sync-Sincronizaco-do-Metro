@@ -36,5 +36,5 @@ make run
 
 ## Sistema operacional
 
-Desenvolvido e testado em **[Ubuntu XX.XX]** rodando no **WSL2** (Windows [10/11]),
-com **[gcc versão X.X.X]** e GNU Make.
+Desenvolvido e testado em **Ubuntu 26.04 LTS** rodando no **WSL2** (Windows 11),
+com **gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0** e GNU Make.
