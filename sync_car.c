@@ -13,6 +13,10 @@ void station_init(struct station *station){
 }
 
 void station_load_car(struct station *station, int count){
+    if(count < 0){
+        count = 0;
+    }
+
     pthread_mutex_lock(&station->mutex);
 
     station->assentos_livre = count;
